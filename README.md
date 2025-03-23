@@ -1,4 +1,7 @@
 # Real-time-Order-Processing-System-Using-Apache-Kafka
+
+# Author Name: Prachi Tomar
+
 # Objective
 To implement a simple real-time order processing system using Apache Kafka. This project will simulate an e-commerce order system, where:
 1. Orders are placed by customers and sent to a Kafka topic (orders).
