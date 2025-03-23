@@ -36,5 +36,13 @@ A simple Python consumer script (order_consumer.py) that listens for new orders.
    bash:python order_producer.py
    
 # #Expected Output
-1. The producer sends orders to the Kafka topic (orders).
-2. The consumer reads and processes orders in real-time.
+1. When you run the producer, it will send orders like:
+pgsql
+✅ Order Sent: {'order_id': 1, 'product': 'Laptop', 'price': 1200}
+✅ Order Sent: {'order_id': 2, 'product': 'Phone', 'price': 800}
+
+2. Meanwhile, the consumer will pick them up in real-time:
+csharp
+👀 Listening for new orders...
+✅ Processing Order: {'order_id': 1, 'product': 'Laptop', 'price': 1200}
+✅ Processing Order: {'order_id': 2, 'product': 'Phone', 'price': 800}
